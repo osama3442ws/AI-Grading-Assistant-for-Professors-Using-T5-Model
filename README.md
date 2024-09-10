@@ -11,21 +11,6 @@ This project is an AI-powered grading assistant designed to help professors eval
 - **Answer Evaluation**: Evaluates student answers against the book text using TF-IDF and cosine similarity.
 - **Result Saving**: Saves student scores and details in an Excel file.
 
-## Requirements
-
-- Python 3.7+
-- `transformers` library
-- `PyPDF2` library
-- `gradio` library
-- `scikit-learn` library
-- `pandas` library
-- `openpyxl` library (for Excel file operations)
-
-You can install the required libraries using pip:
-
-```bash
-pip install transformers PyPDF2 gradio scikit-learn pandas openpyxl
-
 ## Step 1: Upload the Book and Generate Questions
 Upload a PDF book using the file input field.
 Click on "Generate Questions" to produce three questions based on the book's content.
@@ -41,3 +26,19 @@ Question Generation (generate_question_from_text): Uses the T5 model to generate
 Answer Evaluation (evaluate_student_answer): Assesses student answers against the book text using TF-IDF and cosine similarity.
 Result Saving (save_results_to_excel): Saves evaluation results to an Excel file.
 Gradio Interface: Provides the user interface for file uploads, question generation, and answer evaluation.
+
+## Requirements
+
+- Python 3.7+
+- `transformers` library
+- `PyPDF2` library
+- `gradio` library
+- `scikit-learn` library
+- `pandas` library
+- `openpyxl` library (for Excel file operations)
+
+You can install the required libraries using pip:
+
+```bash
+pip install transformers PyPDF2 gradio scikit-learn pandas openpyxl
+
